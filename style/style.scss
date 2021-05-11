@@ -1,0 +1,593 @@
+$border-color: #41719c;
+$primary-blue: #0070c0;
+$secondary-blue: #5b9bd5;
+$third-blue: #00b0f0;
+$background-blue: #e9f2fb;
+$page-border: 2px solid $border-color;
+$breakpoint-smail-device: 375px;
+.text-white {
+  color: white;
+}
+
+.view-more {
+  button {
+    padding: 5px 20px;
+    border: $page-border;
+    border-radius: 10px;
+    color: white;
+    background-color: $secondary-blue;
+  }
+}
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  .wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      .header-item {
+        position: relative;
+        .btn-cart {
+          div {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: $secondary-blue;
+            font-size: 12px;
+            border-radius: 20px;
+            top: 0;
+            right: 0;
+            border: $page-border;
+            line-height: 15px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  height: calc(100vh - 100px);
+  .wrapper {
+    overflow: auto;
+    height: 100%;
+    max-width: 450px;
+    margin: 50px auto 0 auto;
+    .buy-lotto-wrapper {
+      padding: 0 5px;
+      .buy-lotto {
+        &-infor {
+          padding: 5px 10px;
+          span {
+            color: $third-blue;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        &-list {
+          &-item {
+            padding: 5px;
+            border: $page-border;
+            & > div:nth-child(1) {
+              border: $page-border;
+              width: 40px;
+              font-size: 25px;
+              font-weight: 700;
+              color: white;
+              background-color: $third-blue;
+              &.empty {
+                background-color: #BFBFBF;
+              }
+            }
+            & > div:nth-child(2) {
+              min-width: 50px;
+              line-height: 40px;
+              padding: 0 5px;
+            }
+            & > div:nth-child(3) {
+              flex-grow: 1;
+              padding-top: 2px;
+            }
+            & > div:nth-child(4) {
+              width: 50px;
+              color: white;
+              background-color: $secondary-blue;
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              line-height: 30px;
+              margin: 5px 0 5px 10px;
+            }
+          }
+        }
+        &-action {
+          position: relative;
+          background-color: $background-blue;
+          height: 200px;
+          width: 450px;
+          &-save {
+
+          }
+        }
+      }
+    }
+    .payment-wrapper {
+      padding: 0 5px 0 5px;
+      .payment {
+        border-bottom: 10px solid #bfbfbf;
+        padding: 5px 10px;
+        &-total-price {
+          & > div:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: $secondary-blue;
+            border: $page-border;
+          }
+          & > div:nth-child(2) {
+            flex-grow: 1;
+            line-height: 40px;
+            padding-left: 10px;
+          }
+          & > div:nth-child(3) {
+          }
+        }
+        &-balance {
+          border-top: $page-border;
+          & > div:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: $secondary-blue;
+            border: $page-border;
+          }
+          & > div:nth-child(2) {
+            flex-grow: 1;
+            line-height: 40px;
+            padding-left: 10px;
+          }
+          & > div:nth-child(3) {
+          }
+        }
+      }
+    }
+
+    .ticket-bought {
+      padding: 10px 5px 10px 5px;
+    }
+    .ticket {
+      padding: 30px 5px 10px 5px;
+      background-color: $background-blue;
+      &-item {
+        border: $page-border;
+        & > div:nth-child(1) {
+          border: $page-border;
+          width: 35px;
+          min-width: 35px;
+          line-height: 30px;
+          background-color: #ffc000;
+        }
+        & > div:nth-child(2) {
+          padding: 0 15px;
+          width: 300px;
+          min-width: 250px;
+        }
+        & > div:nth-child(3) {
+          width: 70px;
+          line-height: 30px;
+        }
+      }
+      &-card {
+        border: $page-border;
+        background-color: white;
+        &-header {
+          position: relative;
+          padding-top: 40px;
+          padding-bottom: 10px;
+          border-bottom: $page-border;
+          &-numbers {
+            width: 80%;
+            margin: 0 auto;
+          }
+          &-congra {
+            background-color: $secondary-blue;
+            color: white;
+            border: $page-border;
+            width: 70%;
+            margin: 0 auto;
+            position: absolute;
+            top: -25px;
+            left: 65px;
+            p {
+              margin: 0;
+            }
+          }
+        }
+        &-infor {
+          height: 100px;
+          padding: 20px 70px 20px 30px;
+        }
+        &-total {
+          height: 120px;
+          padding: 0 30px;
+          position: relative;
+          span {
+            font-size: 35px;
+          }
+        }
+        &-winning {
+          border-top: $page-border;
+          background-color: $secondary-blue;
+          color: white;
+          position: relative;
+          .show-tickets {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid white;
+            position: absolute;
+            right: 30px;
+            top: 12px;
+          }
+        }
+      }
+    }
+
+    .history {
+      &-item {
+        &-view-detail {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &-result {
+          border: $page-border;
+          .lotto-group-container {
+            flex-grow: 2;
+          }
+          &-view-hash {
+            flex-grow: 1;
+            color: $third-blue;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &-time {
+        &-previous {
+          margin-top: 7px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 15px solid #595959;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &-month {
+          font-weight: 600;
+          font-size: 22px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &-next {
+          margin-top: 7px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 15px solid #595959;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &-myreward {
+        & > h6 {
+          border-bottom: 3px solid #d9d9d9;
+        }
+        &-norewards {
+          background-color: $secondary-blue;
+          border: $page-border;
+          color: white;
+        }
+      }
+
+      &-lotto {
+        & > h6 {
+          border-bottom: 3px solid #d9d9d9;
+        }
+      }
+    }
+
+    .my-reward-wrapper {
+      .my-reward {
+        &-table {
+          thead {
+            background-color: $secondary-blue;
+          }
+        }
+      }
+    }
+    .lotto-result-card-wrapper {
+      background-color: #e9f2fb;
+      padding: 5px;
+      margin-top: 20px;
+      .lotto-result-card {
+        border: $page-border;
+        position: relative;
+        .lotto-group-container {
+          width: 70%;
+          padding: 10px 0 10px 20px;
+        }
+        &-type {
+          position: absolute;
+          background-color: #0070c0;
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+          text-align: center;
+          line-height: 60px;
+          right: 20px;
+          top: -30px;
+          color: white;
+          font-size: 35px;
+        }
+        &-infor {
+          height: 100px;
+          padding: 20px 70px 20px 20px;
+        }
+        &-total {
+          height: 150px;
+          padding: 0 60px 0 20px;
+          span {
+            font-size: 35px;
+          }
+        }
+        &-numbers {
+          border-bottom: $page-border;
+        }
+        &-table {
+          border-top: $page-border;
+          thead {
+            background-color: $secondary-blue;
+          }
+        }
+        &-detail {
+          border-top: $page-border;
+          background-color: $secondary-blue;
+          color: white;
+          position: relative;
+          .show-detail {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid white;
+            position: absolute;
+            right: 30px;
+            top: 12px;
+          }
+          .hide-detail {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid white;
+            position: absolute;
+            right: 30px;
+            top: 8px;
+          }
+        }
+      }
+    }
+
+    .choose-lotto-type {
+      button {
+        text-transform: uppercase;
+        width: 45%;
+        font-size: 25px;
+        border: $page-border;
+        border-radius: 12px;
+        font-weight: 600;
+        background-color: #e7e6e6;
+        color: white;
+        &:first-child.active {
+          background-color: $secondary-blue;
+        }
+        &:nth-child(2).active {
+          background-color: #92d050;
+          position: relative;
+          .lotto-result-noitify {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    .lotto-infor {
+      border: $page-border;
+      padding: 10px 10px;
+      color: #bdbdbd;
+    }
+
+    .round-action {
+      background-color: #e9f2fb;
+      padding: 10px 10px;
+      div {
+        background-color: #00b0f0;
+        margin: 10px 0;
+        padding: 12px 50px;
+        color: white;
+        span {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .lotto-result {
+      margin-top: 25px;
+      background-color: #e9f2fb;
+      padding: 15px 20px;
+      position: relative;
+      p {
+        color: #a7a7a7;
+      }
+      .lotto-group-container {
+        width: 280px;
+        margin: 0 auto;
+      }
+      &-view-all {
+        right: 30px;
+        top: 35px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid $secondary-blue;
+      }
+      &-noitify {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        font-size: 25px;
+      }
+    }
+
+    .upcoming-round {
+      border: $page-border;
+      margin-top: 20px;
+      position: relative;
+      &-type {
+        position: absolute;
+        background-color: #0070c0;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        text-align: center;
+        line-height: 60px;
+        right: 20px;
+        top: -30px;
+        color: white;
+        font-size: 35px;
+      }
+      &-infor {
+        height: 100px;
+        padding: 20px 70px 20px 20px;
+      }
+      &-total {
+        height: 150px;
+        padding: 0 60px 0 20px;
+        span {
+          font-size: 35px;
+        }
+      }
+      &-time {
+        background-color: #2e75b6;
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  .wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    .footer-item-container {
+      display: flex;
+      justify-content: center;
+      .footer-item {
+        width: 20%;
+      }
+    }
+  }
+}
+
+.lotto-group {
+  &-item {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    &:nth-child(1) {
+      background-color: #f35a3f;
+    }
+    &:nth-child(2) {
+      background-color: #ffbb1c;
+    }
+    &:nth-child(3) {
+      background-color: #90b355;
+    }
+    &:nth-child(4) {
+      background-color: #499ee3;
+    }
+    &:nth-child(5) {
+      background-color: #8f46d2;
+    }
+    &.empty {
+      background-color: #D9D9D9;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smail-device) {
+  .ticket {
+    &-item {
+      & > div:nth-child(2) {
+        padding: 0 5px !important;
+        width: 220px !important;
+        min-width: 215px !important;
+      }
+    }
+    &-card {
+      &-header {
+        &-congra {
+          left: 55px !important;
+        }
+      }
+    }
+  }
+}
