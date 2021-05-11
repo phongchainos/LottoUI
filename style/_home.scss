@@ -1,0 +1,97 @@
+main {
+  .wrapper {
+    .lotto-infor {
+      border: $page-border;
+      padding: 10px 10px;
+      color: #bdbdbd;
+    }
+
+    .round-action {
+      background-color: #e9f2fb;
+      padding: 10px 10px;
+      div {
+        background-color: #00b0f0;
+        margin: 10px 0;
+        padding: 12px 50px;
+        color: white;
+        span {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .lotto-result {
+      margin-top: 25px;
+      background-color: #e9f2fb;
+      padding: 15px 20px;
+      position: relative;
+      p {
+        color: #a7a7a7;
+      }
+      .lotto-group-container {
+        width: 280px;
+        margin: 0 auto;
+      }
+      &-view-all {
+        right: 30px;
+        top: 35px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid $secondary-blue;
+      }
+      &-noitify {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        font-size: 25px;
+      }
+    }
+
+    .upcoming-round {
+      border: $page-border;
+      margin-top: 20px;
+      position: relative;
+      &-type {
+        position: absolute;
+        background-color: #0070c0;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        text-align: center;
+        line-height: 60px;
+        right: 20px;
+        top: -30px;
+        color: white;
+        font-size: 35px;
+      }
+      &-infor {
+        height: 100px;
+        padding: 20px 70px 20px 20px;
+      }
+      &-total {
+        height: 150px;
+        padding: 0 60px 0 20px;
+        span {
+          font-size: 35px;
+        }
+      }
+      &-time {
+        background-color: #2e75b6;
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+        padding-right: 20px;
+      }
+    }
+  }
+}

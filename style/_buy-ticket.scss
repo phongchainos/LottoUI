@@ -1,0 +1,180 @@
+main {
+  .wrapper {
+    .buy-lotto-action-wrapper {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: $background-blue;
+      .buy-lotto-action-numbers {
+        flex-wrap: wrap;
+        &-item {
+          width: 15%;
+          margin: 5px;
+          height: 50px;
+          background-color: #bfbfbf;
+          border-radius: 10px;
+          font-weight: 600;
+          padding-top: 5px;
+          &:hover {
+            cursor: pointer;
+          }
+          div {
+            border-radius: 40px;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin: 0 auto;
+          }
+
+          &.active-1 {
+            background: white;
+            div {
+              background-color: $ball-color-1;
+            }
+          }
+          &.active-2 {
+            background: white;
+            div {
+              background-color: $ball-color-2;
+            }
+          }
+          &.active-3 {
+            background: white;
+            div {
+              background-color: $ball-color-3;
+            }
+          }
+          &.active-4 {
+            background: white;
+            div {
+              background-color: $ball-color-4;
+            }
+          }
+          &.active-5 {
+            background: white;
+            div {
+              background-color: $ball-color-5;
+            }
+          }
+        }
+      }
+      .buy-lotto-action-add {
+        height: 160px;
+        padding-top: 20px;
+        div {
+          border: $page-border;
+          width: 120px;
+          height: 120px;
+          line-height: 120px;
+          background-color: $secondary-blue;
+          border-radius: 120px;
+          color: white;
+          text-align: center;
+          font-size: 25px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .buy-lotto-action-save {
+        height: 50px;
+        width: 100%;
+        background-color: $third-blue;
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: 600;
+        border: $page-border;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .buy-lotto-wrapper {
+      padding: 0 5px;
+      .buy-lotto {
+        &-infor {
+          padding: 5px 10px;
+          span {
+            color: $third-blue;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        &-list {
+          &-item {
+            padding: 5px;
+            border: $page-border;
+            & > div:nth-child(1) {
+              border: $page-border;
+              width: 40px;
+              font-size: 25px;
+              font-weight: 700;
+              color: white;
+              background-color: $third-blue;
+              &.empty {
+                background-color: #bfbfbf;
+              }
+            }
+            & > div:nth-child(2) {
+              min-width: 50px;
+              line-height: 40px;
+              padding: 0 5px;
+            }
+            & > div:nth-child(3) {
+              flex-grow: 1;
+              padding-top: 2px;
+            }
+            & > div:nth-child(4) {
+              width: 50px;
+              color: white;
+              background-color: $secondary-blue;
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              line-height: 30px;
+              margin: 5px 0 5px 10px;
+            }
+          }
+        }
+      }
+    }
+    .payment-wrapper {
+      padding: 0 5px 0 5px;
+      .payment {
+        border-bottom: 10px solid #bfbfbf;
+        padding: 5px 10px;
+        &-total-price {
+          & > div:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: $secondary-blue;
+            border: $page-border;
+          }
+          & > div:nth-child(2) {
+            flex-grow: 1;
+            line-height: 40px;
+            padding-left: 10px;
+          }
+        }
+        &-balance {
+          border-top: $page-border;
+          & > div:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: $secondary-blue;
+            border: $page-border;
+          }
+          & > div:nth-child(2) {
+            flex-grow: 1;
+            line-height: 40px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
