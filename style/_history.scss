@@ -1,0 +1,73 @@
+main {
+  .wrapper {
+    .history {
+      &-item {
+        &-view-detail {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &-result {
+          border: $page-border;
+          .lotto-group-container {
+            flex-grow: 2;
+          }
+          &-view-hash {
+            flex-grow: 1;
+            color: $third-blue;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &-time {
+        &-previous {
+          margin-top: 7px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 15px solid #595959;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &-month {
+          font-weight: 600;
+          font-size: 22px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &-next {
+          margin-top: 7px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 15px solid #595959;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &-myreward {
+        & > h6 {
+          border-bottom: 3px solid #d9d9d9;
+        }
+        &-norewards {
+          background-color: $secondary-blue;
+          border: $page-border;
+          color: white;
+        }
+      }
+
+      &-lotto {
+        & > h6 {
+          border-bottom: 3px solid #d9d9d9;
+        }
+      }
+    }
+  }
+}

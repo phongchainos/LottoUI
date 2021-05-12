@@ -1,0 +1,85 @@
+main {
+  .wrapper {
+    .ticket-bought {
+      padding: 10px 5px 10px 5px;
+    }
+    .ticket {
+      padding: 30px 5px 10px 5px;
+      background-color: $background-blue;
+      &-item {
+        border: $page-border;
+        & > div:nth-child(1) {
+          border: $page-border;
+          width: 35px;
+          min-width: 35px;
+          line-height: 30px;
+          background-color: #ffc000;
+        }
+        & > div:nth-child(2) {
+          padding: 0 15px;
+          width: 300px;
+          min-width: 250px;
+        }
+        & > div:nth-child(3) {
+          width: 70px;
+          line-height: 30px;
+        }
+      }
+      &-card {
+        border: $page-border;
+        background-color: white;
+        &-header {
+          position: relative;
+          padding-top: 40px;
+          padding-bottom: 10px;
+          border-bottom: $page-border;
+          &-numbers {
+            width: 80%;
+            margin: 0 auto;
+          }
+          &-congra {
+            background-color: $secondary-blue;
+            color: white;
+            border: $page-border;
+            width: 70%;
+            margin: 0 auto;
+            position: absolute;
+            top: -25px;
+            left: 65px;
+            p {
+              margin: 0;
+            }
+          }
+        }
+        &-infor {
+          height: 100px;
+          padding: 20px 70px 20px 30px;
+        }
+        &-total {
+          height: 120px;
+          padding: 0 30px;
+          position: relative;
+          span {
+            font-size: 35px;
+          }
+        }
+        &-winning {
+          border-top: $page-border;
+          background-color: $secondary-blue;
+          color: white;
+          position: relative;
+          .show-tickets {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid white;
+            position: absolute;
+            right: 30px;
+            top: 12px;
+          }
+        }
+      }
+    }
+  }
+}

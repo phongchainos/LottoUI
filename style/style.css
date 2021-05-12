@@ -1,69 +1,3 @@
-.text-white {
-  color: white;
-}
-
-.view-more button {
-  padding: 5px 20px;
-  border: 2px solid #41719c;
-  border-radius: 10px;
-  color: white;
-  background-color: #5b9bd5;
-}
-
-header {
-  height: 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 1000;
-}
-
-header .wrapper {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-header .wrapper .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5px;
-}
-
-header .wrapper .header-container .header-item {
-  position: relative;
-}
-
-header .wrapper .header-container .header-item .btn-cart div {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #5b9bd5;
-  font-size: 12px;
-  border-radius: 20px;
-  top: 0;
-  right: 0;
-  border: 2px solid #41719c;
-  line-height: 15px;
-  font-weight: 700;
-}
-
-main {
-  height: calc(100vh - 100px);
-}
-
-main .wrapper {
-  overflow: auto;
-  height: 100%;
-  max-width: 450px;
-  margin: 50px auto 0 auto;
-  position: relative;
-}
-
 main .wrapper .buy-lotto-action-wrapper {
   position: absolute;
   bottom: 0;
@@ -80,7 +14,7 @@ main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item {
   width: 15%;
   margin: 5px;
   height: 50px;
-  background-color: #BFBFBF;
+  background-color: #bfbfbf;
   border-radius: 10px;
   font-weight: 600;
   padding-top: 5px;
@@ -104,7 +38,7 @@ main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-1 
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-1 div {
-  background-color: #F35A3F;
+  background-color: #f35a3f;
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-2 {
@@ -112,7 +46,7 @@ main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-2 
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-2 div {
-  background-color: #FFBB1C;
+  background-color: #ffbb1c;
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-3 {
@@ -120,7 +54,7 @@ main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-3 
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-3 div {
-  background-color: #90B355;
+  background-color: #90b355;
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-4 {
@@ -128,7 +62,7 @@ main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-4 
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-4 div {
-  background-color: #499EE3;
+  background-color: #499ee3;
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-5 {
@@ -136,7 +70,7 @@ main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-5 
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-numbers-item.active-5 div {
-  background-color: #8F46D2;
+  background-color: #8f46d2;
 }
 
 main .wrapper .buy-lotto-action-wrapper .buy-lotto-action-add {
@@ -275,103 +209,6 @@ main .wrapper .payment-wrapper .payment-balance > div:nth-child(2) {
           flex-grow: 1;
   line-height: 40px;
   padding-left: 10px;
-}
-
-main .wrapper .ticket-bought {
-  padding: 10px 5px 10px 5px;
-}
-
-main .wrapper .ticket {
-  padding: 30px 5px 10px 5px;
-  background-color: #e9f2fb;
-}
-
-main .wrapper .ticket-item {
-  border: 2px solid #41719c;
-}
-
-main .wrapper .ticket-item > div:nth-child(1) {
-  border: 2px solid #41719c;
-  width: 35px;
-  min-width: 35px;
-  line-height: 30px;
-  background-color: #ffc000;
-}
-
-main .wrapper .ticket-item > div:nth-child(2) {
-  padding: 0 15px;
-  width: 300px;
-  min-width: 250px;
-}
-
-main .wrapper .ticket-item > div:nth-child(3) {
-  width: 70px;
-  line-height: 30px;
-}
-
-main .wrapper .ticket-card {
-  border: 2px solid #41719c;
-  background-color: white;
-}
-
-main .wrapper .ticket-card-header {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #41719c;
-}
-
-main .wrapper .ticket-card-header-numbers {
-  width: 80%;
-  margin: 0 auto;
-}
-
-main .wrapper .ticket-card-header-congra {
-  background-color: #5b9bd5;
-  color: white;
-  border: 2px solid #41719c;
-  width: 70%;
-  margin: 0 auto;
-  position: absolute;
-  top: -25px;
-  left: 65px;
-}
-
-main .wrapper .ticket-card-header-congra p {
-  margin: 0;
-}
-
-main .wrapper .ticket-card-infor {
-  height: 100px;
-  padding: 20px 70px 20px 30px;
-}
-
-main .wrapper .ticket-card-total {
-  height: 120px;
-  padding: 0 30px;
-  position: relative;
-}
-
-main .wrapper .ticket-card-total span {
-  font-size: 35px;
-}
-
-main .wrapper .ticket-card-winning {
-  border-top: 2px solid #41719c;
-  background-color: #5b9bd5;
-  color: white;
-  position: relative;
-}
-
-main .wrapper .ticket-card-winning .show-tickets {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 15px solid white;
-  position: absolute;
-  right: 30px;
-  top: 12px;
 }
 
 main .wrapper .history-item-view-detail:hover {
@@ -537,38 +374,101 @@ main .wrapper .lotto-result-card-wrapper .lotto-result-card-detail .hide-detail 
   top: 8px;
 }
 
-main .wrapper .choose-lotto-type button {
-  text-transform: uppercase;
-  width: 45%;
-  font-size: 25px;
+main .wrapper .ticket-bought {
+  padding: 10px 5px 10px 5px;
+}
+
+main .wrapper .ticket {
+  padding: 30px 5px 10px 5px;
+  background-color: #e9f2fb;
+}
+
+main .wrapper .ticket-item {
   border: 2px solid #41719c;
-  border-radius: 12px;
-  font-weight: 600;
-  background-color: #e7e6e6;
-  color: white;
 }
 
-main .wrapper .choose-lotto-type button:first-child.active {
+main .wrapper .ticket-item > div:nth-child(1) {
+  border: 2px solid #41719c;
+  width: 35px;
+  min-width: 35px;
+  line-height: 30px;
+  background-color: #ffc000;
+}
+
+main .wrapper .ticket-item > div:nth-child(2) {
+  padding: 0 15px;
+  width: 300px;
+  min-width: 250px;
+}
+
+main .wrapper .ticket-item > div:nth-child(3) {
+  width: 70px;
+  line-height: 30px;
+}
+
+main .wrapper .ticket-card {
+  border: 2px solid #41719c;
+  background-color: white;
+}
+
+main .wrapper .ticket-card-header {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #41719c;
+}
+
+main .wrapper .ticket-card-header-numbers {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .wrapper .ticket-card-header-congra {
   background-color: #5b9bd5;
+  color: white;
+  border: 2px solid #41719c;
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: -25px;
+  left: 65px;
 }
 
-main .wrapper .choose-lotto-type button:nth-child(2).active {
-  background-color: #92d050;
+main .wrapper .ticket-card-header-congra p {
+  margin: 0;
+}
+
+main .wrapper .ticket-card-infor {
+  height: 100px;
+  padding: 20px 70px 20px 30px;
+}
+
+main .wrapper .ticket-card-total {
+  height: 120px;
+  padding: 0 30px;
   position: relative;
 }
 
-main .wrapper .choose-lotto-type button:nth-child(2).active .lotto-result-noitify {
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  line-height: 30px;
-  text-align: center;
-  background-color: red;
+main .wrapper .ticket-card-total span {
+  font-size: 35px;
+}
+
+main .wrapper .ticket-card-winning {
+  border-top: 2px solid #41719c;
+  background-color: #5b9bd5;
   color: white;
+  position: relative;
+}
+
+main .wrapper .ticket-card-winning .show-tickets {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid white;
   position: absolute;
-  top: -15px;
-  right: -15px;
-  font-size: 25px;
+  right: 30px;
+  top: 12px;
 }
 
 main .wrapper .lotto-infor {
@@ -676,6 +576,106 @@ main .wrapper .upcoming-round-time {
   padding-right: 20px;
 }
 
+.text-white {
+  color: white;
+}
+
+.view-more button {
+  padding: 5px 20px;
+  border: 2px solid #41719c;
+  border-radius: 10px;
+  color: white;
+  background-color: #5b9bd5;
+}
+
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+header .wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+header .wrapper .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+header .wrapper .header-container .header-item {
+  position: relative;
+}
+
+header .wrapper .header-container .header-item .btn-cart div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #5b9bd5;
+  font-size: 12px;
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+  border: 2px solid #41719c;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+main {
+  height: calc(100vh - 100px);
+}
+
+main .wrapper {
+  overflow: auto;
+  height: 100%;
+  max-width: 450px;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+
+main .wrapper .choose-lotto-type button {
+  text-transform: uppercase;
+  width: 45%;
+  font-size: 25px;
+  border: 2px solid #41719c;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: #e7e6e6;
+  color: white;
+}
+
+main .wrapper .choose-lotto-type button:first-child.active {
+  background-color: #5b9bd5;
+}
+
+main .wrapper .choose-lotto-type button:nth-child(2).active {
+  background-color: #92d050;
+  position: relative;
+}
+
+main .wrapper .choose-lotto-type button:nth-child(2).active .lotto-result-noitify {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 25px;
+}
+
 footer {
   width: 100%;
   height: 50px;
@@ -713,23 +713,23 @@ footer .wrapper .footer-item-container .footer-item {
 }
 
 .lotto-group-item:nth-child(1) {
-  background-color: #F35A3F;
+  background-color: #f35a3f;
 }
 
 .lotto-group-item:nth-child(2) {
-  background-color: #FFBB1C;
+  background-color: #ffbb1c;
 }
 
 .lotto-group-item:nth-child(3) {
-  background-color: #90B355;
+  background-color: #90b355;
 }
 
 .lotto-group-item:nth-child(4) {
-  background-color: #499EE3;
+  background-color: #499ee3;
 }
 
 .lotto-group-item:nth-child(5) {
-  background-color: #8F46D2;
+  background-color: #8f46d2;
 }
 
 .lotto-group-item.empty {
