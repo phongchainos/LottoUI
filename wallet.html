@@ -18,7 +18,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <title>Hello, world!</title>
+    <title>Lotto Wallet!</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -31,7 +31,7 @@
             </button>
           </div>
           <div class="header-item">
-            <h2>commalotto</h2>
+            <h2>Lotto Wallet</h2>
           </div>
           <div class="header-item">
             <button class="btn btn-light btn-cart">
@@ -44,50 +44,76 @@
     </header>
     <main>
       <div class="wrapper">
-        <div class="d-flex choose-lotto-type justify-content-evenly py-2">
-          <button type="button" class="btn active">small-ball</button>
-          <button type="button" class="btn active">big-ball</button>
-        </div>
-        <div class="lotto-infor">SMALL-BALL - 하루 단위로 추첨하는 방식</div>
-        <div class="upcoming-round">
-          <div class="upcoming-round-type">S</div>
-          <div class="upcoming-round-infor">
-            <p>SMALL-BALL Round 123 Total collected (2021.03.25 19:30:00)</p>
+        <div class="wallet">
+          <div class="wallet-account-infor">
+            <h5><b> ID 님</b></h5>
+            <h5><b>안녕하세요.</b></h5>
+            <button class="btn btn-sm btn-outline-info">내 주소 보기</button>
+            <p>총 15,043,845 원</p>
           </div>
-          <div class="upcoming-round-total">
-            <p class="text-end">
-              <span><b>513,244,863</b></span> COMP
-            </p>
-            <hr />
-            <p class="text-end">( <b>513,244.63</b> USDT)</p>
+          <div class="wallet-chart">
+            <canvas id="myChart"></canvas>
           </div>
-          <div class="upcoming-round-time text-white">
-            <p>00일 00시간 00분 00초 남음</p>
-          </div>
-        </div>
-        <div class="round-action">
-          <div class="round-action-play">
-            <img src="image/ticket2.png" width="30" alt="" />
-            <span>Play SMALL-BALL</span>
-          </div>
-          <div class="round-action-subscribe">
-            <img src="image/ticket2.png" width="30" alt="" />
-            <span>Subscribe BIG-BALL</span>
-          </div>
-        </div>
-        <div class="lotto-result">
-          <p>SMALL-BALL 지난당첨결과보기</p>
-          <div class="lotto-group-container">
-            <div class="lotto-group d-flex justify-content-between">
-              <div class="lotto-group-item">1</div>
-              <div class="lotto-group-item">3</div>
-              <div class="lotto-group-item">11</div>
-              <div class="lotto-group-item">18</div>
-              <div class="lotto-group-item">24</div>
+          <div class="legend d-flex justify-content-evenly mt-4">
+            <div class="legend-comp">
+              <div></div>
+              COMP
+            </div>
+            <div class="legend-usdt">
+              <div></div>
+              USDT
             </div>
           </div>
-          <div class="lotto-result-view-all"></div>
-          <div class="lotto-result-noitify">!</div>
+          <div class="wallet-action">
+            <div
+              class="
+                wallet-action-item
+                d-flex
+                text-white
+                justify-content-between
+                hover
+              "
+            >
+              <div>F</div>
+              <div>
+                <p>COMP</p>
+                <p>215</p>
+              </div>
+              <div>sdff</div>
+            </div>
+            <div
+              class="
+                wallet-action-item
+                d-flex
+                text-white
+                justify-content-between
+                hover
+              "
+            >
+              <div>T</div>
+              <div>
+                <p>USDT</p>
+                <p>215</p>
+              </div>
+              <div>sdff</div>
+            </div>
+            <div
+              class="
+                wallet-action-item
+                d-flex
+                text-white
+                justify-content-between
+                hover
+              "
+            >
+              <div>E</div>
+              <div>
+                <p>EX</p>
+                <p>215</p>
+              </div>
+              <div>sdff</div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -150,5 +176,38 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script>
+      var data = {
+        labels: ["COME", "USDT"],
+        datasets: [
+          {
+            data: [300, 100],
+            backgroundColor: ["#00B0F0", "#FFD966"],
+            hoverBackgroundColor: ["#00B0F0", "#FFD966"],
+          },
+        ],
+      };
+
+      var ctx = document.getElementById("myChart");
+
+      // And for a doughnut chart
+      var myDoughnutChart = new Chart(ctx, {
+        type: "doughnut",
+        data: data,
+        options: {
+          legend: {
+            display: false,
+            position: "bottom",
+            labels: {
+                fontSize: 16,
+                usePointStyle: true
+            }
+          },
+          rotation: 1 * Math.PI,
+          circumference: 1 * Math.PI,
+        },
+      });
+    </script>
   </body>
 </html>

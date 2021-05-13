@@ -18,7 +18,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <title>Hello, world!</title>
+    <title>Lotto sub small ball!</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -31,7 +31,7 @@
             </button>
           </div>
           <div class="header-item">
-            <h2>commalotto</h2>
+            <h2>Subcribe small ball</h2>
           </div>
           <div class="header-item">
             <button class="btn btn-light btn-cart">
@@ -44,50 +44,45 @@
     </header>
     <main>
       <div class="wrapper">
-        <div class="d-flex choose-lotto-type justify-content-evenly py-2">
-          <button type="button" class="btn active">small-ball</button>
-          <button type="button" class="btn active">big-ball</button>
-        </div>
-        <div class="lotto-infor">SMALL-BALL - 하루 단위로 추첨하는 방식</div>
-        <div class="upcoming-round">
-          <div class="upcoming-round-type">S</div>
-          <div class="upcoming-round-infor">
-            <p>SMALL-BALL Round 123 Total collected (2021.03.25 19:30:00)</p>
-          </div>
-          <div class="upcoming-round-total">
-            <p class="text-end">
-              <span><b>513,244,863</b></span> COMP
+        <div class="sub-sm-ball">
+          <div class="sub-sm-ball-instruction text-center">
+            <p>
+              구독 상품 구매 시 자동으로 매 라운드 정해진 횟수만큼 SMALL-BALL
+              로또에 자동으로 참여가 됩니다.
             </p>
-            <hr />
-            <p class="text-end">( <b>513,244.63</b> USDT)</p>
           </div>
-          <div class="upcoming-round-time text-white">
-            <p>00일 00시간 00분 00초 남음</p>
-          </div>
-        </div>
-        <div class="round-action">
-          <div class="round-action-play">
-            <img src="image/ticket2.png" width="30" alt="" />
-            <span>Play SMALL-BALL</span>
-          </div>
-          <div class="round-action-subscribe">
-            <img src="image/ticket2.png" width="30" alt="" />
-            <span>Subscribe BIG-BALL</span>
-          </div>
-        </div>
-        <div class="lotto-result">
-          <p>SMALL-BALL 지난당첨결과보기</p>
-          <div class="lotto-group-container">
-            <div class="lotto-group d-flex justify-content-between">
-              <div class="lotto-group-item">1</div>
-              <div class="lotto-group-item">3</div>
-              <div class="lotto-group-item">11</div>
-              <div class="lotto-group-item">18</div>
-              <div class="lotto-group-item">24</div>
+          <div class="sub-sm-ball-subscription">
+            <p class="text-center">현재 이용 중인 구독 상품</p>
+            <div class="sub-sm-ball-subscription-card hover text-white">
+              <div class="subscription-infor text-center pt-2 px-4">
+                <h2>1Play/10Round</h2>
+                <p>(10라운드까지 복권 1개씩 자동으로 참여합니다)</p>
+              </div>
+              <div class="subscription-time text-end pt-2 pe-4">
+                <p>남은 라운드 (9/10</p>
+                <p>사용기한: 2021-02-01~2021-02-10</p>
+              </div>
             </div>
           </div>
-          <div class="lotto-result-view-all"></div>
-          <div class="lotto-result-noitify">!</div>
+          <div class="sub-sm-ball-product pt-4">
+            <p>구독 상품(COMP가격에 따른 구독 상품)</p>
+            <div class="sub-sm-ball-product-list text-center pb-2">
+              <div class="sub-sm-ball-product-list-item hover active">10 COMP</div>
+              <div class="sub-sm-ball-product-list-item hover">30 COMP</div>
+              <div class="sub-sm-ball-product-list-item hover">50 COMP</div>
+              <div class="sub-sm-ball-product-list-item hover deactive">100 COMP</div>
+              <div class="sub-sm-ball-product-list-item hover">1000 COMP</div>
+              <div class="sub-sm-ball-product-list-item hover">2000 COMP</div>
+              <div class="sub-sm-ball-product-list-item hover">3000 COMP</div>
+            </div>
+            <div class="sub-sm-ball-product-card text-white text-center hover pt-2">
+              <h2>1Play/10Round</h2>
+              <p>(10라운드까지 복권 1개씩 자동으로 참여합니다)</p>
+            </div>
+            <div class="sub-sm-ball-product-buy text-center hover text-white">
+              구매하기
+            </div>
+          </div>
         </div>
       </div>
     </main>

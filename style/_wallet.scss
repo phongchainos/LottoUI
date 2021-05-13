@@ -1,0 +1,70 @@
+main {
+  .wrapper {
+    .wallet {
+      &-account-infor {
+        padding: 15px;
+        p {
+          font-size: 30px;
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
+      }
+      &-chart {
+        // height: 200px;
+      }
+      &-action {
+        padding: 20px 5px 0 5px;
+        &-item {
+          background-color: $secondary-blue;
+          border: $page-border;
+          margin-bottom: 5px;
+          & > div:nth-child(1) {
+            width: 35px;
+            height: 35px;
+            border-radius: 35px;
+            line-height: 30px;
+            background-color: white;
+            margin: 15px 10px;
+            border: $page-border;
+            color: black;
+            font-weight: 700;
+            text-align: center;
+          }
+          & > div:nth-child(2) {
+              flex-grow: 1;
+              padding-top: 10px;
+            p {
+              margin-bottom: 0;
+            }
+          }
+          & > div:nth-child(3) {
+              padding-top: 20px;
+              margin-right: 20px;
+          }
+        }
+      }
+      .legend {
+        &-comp {
+          display: flex;
+          div {
+            width: 25px;
+            height: 25px;
+            background-color: #00b0f0;
+            margin-right: 5px;
+            border: $page-border;
+          }
+        }
+        &-usdt {
+          display: flex;
+          div {
+            width: 25px;
+            height: 25px;
+            background-color: #ffd966;
+            margin-right: 5px;
+            border: $page-border;
+          }
+        }
+      }
+    }
+  }
+}

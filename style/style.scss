@@ -3,7 +3,7 @@ $primary-blue: #0070c0;
 $secondary-blue: #5b9bd5;
 $third-blue: #00b0f0;
 $background-blue: #e9f2fb;
-$page-border: 2px solid $border-color;
+$page-border: 1.5px solid $border-color;
 $breakpoint-smail-device: 375px;
 $ball-color-1: #f35a3f;
 $ball-color-2: #ffbb1c;
@@ -15,10 +15,26 @@ $ball-color-5: #8f46d2;
 @import "result";
 @import "ticket";
 @import "home";
+@import "sub-sm-ball";
+@import "wallet";
+@import "wallet-transaction";
+@import "money-change";
+.text-red {
+  color: #FF5050;
+}
 .text-white {
   color: white;
 }
+.hover {
+  cursor: pointer;
+}
 
+.text-link {
+  color: $third-blue;
+  &:hover {
+    cursor: pointer;
+  }
+}
 .view-more {
   button {
     padding: 5px 20px;
@@ -157,6 +173,9 @@ footer {
 }
 
 @media (max-width: $breakpoint-smail-device) {
+  .wallet-transaction-history-tabs-container {
+    height: calc(100vh - 515px ) !important;
+  }
   .ticket {
     &-item {
       & > div:nth-child(2) {
