@@ -1,0 +1,64 @@
+main {
+  .wrapper {
+    .sub-sm-ball {
+      padding-bottom: 50px;
+      padding: 5px 10px;
+      &-instruction {
+        padding: 20px 60px 0 60px;
+        border-bottom: 3px solid #a6a6a6;
+        background-color: white;
+      }
+      &-subscription {
+        padding-top: 1rem;
+        border-bottom: 3px solid #a6a6a6;
+        &-card {
+          border: $page-border;
+          margin-bottom: 1.5rem;
+          background-color: $secondary-blue;
+          .subscription-infor {
+            border-bottom: $page-border;
+          }
+          .subscription-time {
+            & p:first-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      &-product {
+        &-list {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          &-item {
+            flex: 0 0 auto;
+            background-color: #D9D9D9;
+            margin: 5px;
+            padding: 4px 25px;
+            border-radius: 5px;
+            border: $page-border;
+            &.active {
+                background-color: $secondary-blue;
+                color: white;
+            }
+            &.deactive {
+                color: #C5C5C5;
+            }
+          }
+        }
+        &-card {
+            border: $page-border;
+            background-color: $secondary-blue;
+        }
+        &-buy {
+            border: $page-border;
+            margin: 30px 50px;
+            background-color: $secondary-blue;
+            padding: 15px 20px;
+            font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

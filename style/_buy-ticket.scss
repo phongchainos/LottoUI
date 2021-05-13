@@ -95,12 +95,6 @@ main {
       .buy-lotto {
         &-infor {
           padding: 5px 10px;
-          span {
-            color: $third-blue;
-            &:hover {
-              cursor: pointer;
-            }
-          }
         }
         &-list {
           &-item {

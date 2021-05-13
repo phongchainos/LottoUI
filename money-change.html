@@ -18,12 +18,28 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <title>Hello, world!</title>
+    <title>Change Money!</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <header>
       <div class="wrapper">
+        <p>
+          <strong>Solution with span:</strong> I would like
+          <span
+            class="input"
+            style="
+              border: 1px solid #ccc;
+              font-family: inherit;
+              font-size: inherit;
+              padding: 1px 6px;
+            "
+            role="textbox"
+            contenteditable
+            >99</span
+          >
+          hugs
+        </p>
         <div class="header-container">
           <div class="header-item">
             <button class="btn btn-light">
@@ -31,7 +47,7 @@
             </button>
           </div>
           <div class="header-item">
-            <h2>commalotto</h2>
+            <h2>Change money</h2>
           </div>
           <div class="header-item">
             <button class="btn btn-light btn-cart">
@@ -44,50 +60,66 @@
     </header>
     <main>
       <div class="wrapper">
-        <div class="d-flex choose-lotto-type justify-content-evenly py-2">
-          <button type="button" class="btn active">small-ball</button>
-          <button type="button" class="btn active">big-ball</button>
-        </div>
-        <div class="lotto-infor">SMALL-BALL - 하루 단위로 추첨하는 방식</div>
-        <div class="upcoming-round">
-          <div class="upcoming-round-type">S</div>
-          <div class="upcoming-round-infor">
-            <p>SMALL-BALL Round 123 Total collected (2021.03.25 19:30:00)</p>
+        <div class="change-money">
+          <label class="d-block" htmlFor="myinput" for="myinput">
+            <div class="money-input mt-5">
+              <p>Ex <span class="float-end">충전하실 EX </span></p>
+              <p class="text-end">
+                <span style="font-size: 24px">+</span>
+                <input
+                  class="money-input-field"
+                  placeholder="0"
+                  onkeyup="changeInputSize()"
+                  name="myinput"
+                  id="myinput"
+                  type="number"
+                  inputmode="numeric"
+                />
+                COMP
+              </p>
+              <script>
+                function changeInputSize() {
+                  const e = document.getElementById("myinput");
+                  console.log(e.value);
+                  e.style.width = (("" + e.value).length + 2) * 10 + "px";
+                }
+              </script>
+            </div>
+          </label>
+          <div class="change-money-result">
+            <div class="change-money-result-container d-flex mt-5 mb-2">
+              <div class="change-money-result-container-item px-4">20%</div>
+              <div class="change-money-result-container-item px-4 mx-2">
+                50%
+              </div>
+              <div class="change-money-result-container-item px-4">100%</div>
+            </div>
+            <div class="change-money-result-card">
+              <p>USDT</p>
+              <p class="text-end" style="font-size: 18px; font-weight: 600">
+                <span style="font-size: 24px">-</span>
+                <input
+                  class="money-input-field"
+                  type="number"
+                  readonly
+                  inputmode="numeric"
+                />
+                USDT
+              </p>
+            </div>
+            <h6 class="p-2"> <span class="text-red fw-bolder">잔액이 부족합니다</span> <span class="float-end">잔여 USDT : 215 USDT</span> </h6>
           </div>
-          <div class="upcoming-round-total">
-            <p class="text-end">
-              <span><b>513,244,863</b></span> COMP
-            </p>
-            <hr />
-            <p class="text-end">( <b>513,244.63</b> USDT)</p>
-          </div>
-          <div class="upcoming-round-time text-white">
-            <p>00일 00시간 00분 00초 남음</p>
-          </div>
-        </div>
-        <div class="round-action">
-          <div class="round-action-play">
-            <img src="image/ticket2.png" width="30" alt="" />
-            <span>Play SMALL-BALL</span>
-          </div>
-          <div class="round-action-subscribe">
-            <img src="image/ticket2.png" width="30" alt="" />
-            <span>Subscribe BIG-BALL</span>
-          </div>
-        </div>
-        <div class="lotto-result">
-          <p>SMALL-BALL 지난당첨결과보기</p>
-          <div class="lotto-group-container">
-            <div class="lotto-group d-flex justify-content-between">
-              <div class="lotto-group-item">1</div>
-              <div class="lotto-group-item">3</div>
-              <div class="lotto-group-item">11</div>
-              <div class="lotto-group-item">18</div>
-              <div class="lotto-group-item">24</div>
+          <div class="change-money-balance">
+            <p>something here</p>
+            <div class="change-money-balance-number p-3">
+              <h6 class="text-end">0 USDT</h6>
             </div>
           </div>
-          <div class="lotto-result-view-all"></div>
-          <div class="lotto-result-noitify">!</div>
+          <div class="change-money-save text-center pt-5">
+            <button class="btn active">
+              충전하기
+            </button>
+          </div>
         </div>
       </div>
     </main>
