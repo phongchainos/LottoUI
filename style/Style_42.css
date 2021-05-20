@@ -1,0 +1,184 @@
+.App {
+    text-align: center;
+    width: 20%;
+    margin-left:10px
+  }
+  .App-2 {
+    text-align: center;
+    width: 20%;
+    margin-left:10px;
+    width: 20%;
+    margin-left:10px;
+  }
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+  }
+  .Color-backgroud {
+    background-color: #F2F2F2;
+  }
+  .Font-bold {
+    font-weight: bold;
+    color: black;
+  }
+  .Space {
+    height: 5px;
+  }
+  .Top-button {
+    width: 40%;
+    border-color:#00B0F0;
+    background-color:white
+  }
+  .Text-color-in-button {
+    color:#00B0F0
+  }
+  .Back-middle {
+    background-color: #F2F2F2;
+    border-radius:10px
+  }
+  .Circle-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B9BD5;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+  }
+  .Text-color-white {
+    color :white
+  }
+  .Table-background-top {
+    background-color: #5B9BD5
+  }
+  .Table-background-1 {
+    background-color: #D2DEEF
+  }
+  .Table-background-2 {
+    background-color: #EAEFF7
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  .text-color-white {
+    color: white;
+  }
+  .text-bold {
+    font-weight: bold;
+  }
+  .Button-left {
+    width: 45%;
+    background-color: #D9D9D9;
+    border-Color: #41719C;
+    border-radius: 5px;
+    color: white
+  }
+  .Button-right {
+    width: 45%;
+    background-color: #00B0F0;
+    border-color: #41719C;
+    border-radius: 5px;
+    color: white
+  }
+  .Button-in-bottom {
+    width:100%;
+    margin-top:80%;
+    background-color:#5B9BD5;
+    border-width:1px;
+    border-color:#41719C
+  } 
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .Style-button-Ex {
+    display:flex;
+    background-color: #5B9BD5;
+    color:white;
+    height:40px;
+    justify-content:center;
+    align-items:center;
+  }
+  .Style-text-under {
+    display: flex;
+    justify-content: space-around
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  .Style-back-text {
+    margin-top:5px;
+    background-color: #5B9BD5
+  }
+  .Style-double-button {
+    display: flex;
+    justify-content: space-around
+  }
+  .Text-col {
+    width:95%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    display:inline-block
+  }
+  .Text-col-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left
+  }
+  .My-style-1 {
+    flex-direction: row;
+    display: flex;
+  }
+  .My-style-2 {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center
+  }
+  .My-style-3 {
+    height:1px;
+    display:flex;
+    background-color:blue;
+  }
+  .My-style-4 {
+    margin-top: 5px;
+    background-color: #5B9BD5
+  }
+  .My-style-text {
+    font-size: 30px;
+    color:black;
+    font-weight: bold;
+  }
+  .My-style-text-2 {
+    font-size: 30px;
+    color:black;
+    margin-left: 10px;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
